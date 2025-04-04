@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>인사 웹사이트</title>
+</head>
+<body>
+    <h1>👋 환영합니다!</h1>
+    <form method="post">
+        <label for="username">이름을 입력하세요:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">인사받기</button>
+    </form>
+
+    {% if name %}
+        <h2>안녕하세요, {{ name }}님!</h2>
+    {% endif %}
+</body>
+</html>
